@@ -1,11 +1,11 @@
 <p align="center">
-  <img alt="Letmeask" src="../src/assets/images/logo.svg" />
+  <img alt="Letmeask" src="./src/assets/images/logo.svg" />
 </p>
 
 <br>
 
 <h1 align="center">
-	<img alt="Letmeask" src="../src/assets/images/capture.png" style="border-radius: 8px;" />
+	<img alt="Letmeask" src="./src/assets/images/capture.png" style="border-radius: 8px;" />
 </h1>
 
 ## 🧪 Tecnologias
@@ -26,7 +26,7 @@ Como pré-requisitos, é necessário instalar o [Node.js](https://nodejs.org/pt-
 Cumprindo os pré-requisitos, clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.com/APACHE-0002/letmeask
+$ git clone https://github.com/APACHE-0002/letmeask2
 $ cd letmeask
 ```
 
