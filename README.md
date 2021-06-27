@@ -5,7 +5,7 @@
 <br>
 
 <h1 align="center">
-	<img alt="Letmeask" src="./src/assets/images/capture.png" style="border-radius: 8px;" />
+	<img alt="Letmeask" src="./src/assets/images/duco.svg" style="border-radius: 8px;" />
 </h1>
 
 ## 🧪 Tecnologias
