@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import {Home} from './pages/Home';
+import {NewRoom} from './pages/NewRoom';
+import { Room } from './pages/Room';
+
+import { AuthContextProvider } from './contexts/AuthContext';
+import { AdminRoom } from './pages/AdminRoom';
+
+/*TestContext, para repassar uma informaçao juntamente dentro do
+browserrouter assim toda aplicaçao tendo acesso a essa informaçao
+export const TestContext = createContext({} as any);
+  const [value, setValue] = useState('');
+*/
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <AuthContextProvider>
+      <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/rooms/new" component={NewRoom} />
+      <Route exact path="/rooms/:id" component={Room}/>
+
+      <Route exact path="/admin/rooms/:id" component={AdminRoom}/>
+      </Switch>
+    </AuthContextProvider>
+    </BrowserRouter>
   );
 }
 
