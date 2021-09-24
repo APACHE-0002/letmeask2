@@ -10,6 +10,10 @@
 /coverage
 
 # production
+/env
+/.env
+/.env.local
+.env.local
 /build
 
 # misc
